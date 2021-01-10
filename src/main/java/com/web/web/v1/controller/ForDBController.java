@@ -9,6 +9,7 @@ import com.web.repository.InfoRepository;
 import com.web.repository.NewsRepository;
 import com.web.web.v1.ApiUtil;
 import lombok.RequiredArgsConstructor;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -23,6 +24,7 @@ import java.util.List;
 @RestController
 @RequestMapping(ApiUtil.DB)
 @RequiredArgsConstructor
+@CrossOrigin
 public class ForDBController {
 
     private final ImageRepository imageRepository;
